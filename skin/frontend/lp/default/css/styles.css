@@ -522,7 +522,7 @@ tr.summary-details-excluded { font-style:italic; }
 .header .form-search label { float:left; width:10px; height:32px; text-align:left; text-indent:-999em; overflow:hidden; }
 .header .form-search input.input-text { float:left; border-color:#DBDBDC; width:786px; margin-right:0px; height:30px; padding: 0px 0px 0px 4px;}
 .header .form-search button.button { float:left; height:32px; width:81px; background: #535355; }
-.header .form-search button.button span { border:0; background: #535355 url(../images/btn_search.gif) 0 0 no-repeat; padding:2px 0px 0px 0px; font:14px "Open Sans", "Myriad Pro", Tahoma, Verdana, Arial, sans-serif; text-transform: uppercase}
+.header .form-search button.button span { height:25px; border:0px; background:#535355; padding: 7px 0 0 0px; font:14px "Open Sans", "Myriad Pro", Tahoma, Verdana, Arial, sans-serif; text-transform: uppercase}
 .header .form-search button.button span span { background-position:100% 0; padding:0px 0px 0px 0px; }
 .header .form-search .search-autocomplete { z-index:999; left:40px !important; top:22px !important; }
 .header .form-search .search-autocomplete ul { border:1px solid #5c7989; background-color:#f9f5f0; }
