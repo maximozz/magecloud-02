@@ -1,2 +1,3 @@
 # magecloud-02
-test task
+test task for Magento developer
+sources : final revision
