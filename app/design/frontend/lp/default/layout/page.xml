@@ -68,22 +68,18 @@ Default layout, loads most of the pages
 
             <block type="page/html_header" name="header" as="header">
                 <block type="page/template_links" name="top.links" as="topLinks"/>
-<!--
-                <block type="page/template_links" name="top.links.custom" as="topLinksCustom" template="page/template/links_custom.phtml" />
--->
+
                 <block type="page/switch" name="store_language" as="store_language" template="page/switch/languages.phtml"/>
                 <block type="core/text_list" name="top.menu" as="topMenu" translate="label">
                     <label>Navigation Bar</label>
                     <block type="page/html_topmenu" name="catalog.topnav" template="page/html/topmenu.phtml"/>
                 </block>
-<!--
-                <block type="core/text_list" name="top.menu.custom" as="topMenuCustom" template="page/template/topmenu_custom.phtml" />
-                <block type="core/text_list" name="top.menu.custom" as="topMenuCustom" template="page/html/topmenu_custom.phtml" />
--->
+<!-- -->
                 <block type="core/text_list" name="top.menu.custom" as="topMenuCustom" translate="label">
                     <label>Navigation Bar</label>
-                    <block type="page/html_topmenu" name="catalog.topnav.custom" template="page/html/topmenu_custom.phtml"/>
+                    <block type="page/html_topmenu" name="catalog.topnav.custom" template="page/html/topmenu_lp.phtml"/>
                 </block>
+<!-- -->
                 <block type="page/html_wrapper" name="top.container" as="topContainer" translate="label">
                     <label>Page Header</label>
                     <action method="setElementClass"><value>top-container</value></action>
@@ -103,12 +99,7 @@ Default layout, loads most of the pages
             <block type="core/text_list" name="content" as="content" translate="label">
                 <label>Main Content Area</label>
             </block>
-<!-- -->
-            <block type="core/text_list" name="content_lp" as="content_lp" translate="label">
-                <label>Main Content Area</label>
-                <block type="page/html" name="content.lp" template="page/html/content_lp.phtml"/>
-            </block>
-<!-- -->
+
             <block type="core/text_list" name="right" as="right" translate="label">
                 <label>Right Column</label>
             </block>
