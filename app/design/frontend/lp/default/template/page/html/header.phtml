@@ -35,11 +35,11 @@
             </div>
             <?php echo $this->getChildHtml('store_language') ?>
         </div>
-        <div id="top-menu">
+        <div id="top-menu-custom">
             <div id="welcome-wrapper">
                 <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
             </div>
-            <?php echo $this->getChildHtml('topMenu') ?>
+            <?php echo $this->getChildHtml('topMenuCustom') ?>
         </div>
         <?php if ($this->getIsHomePage()):?>
         <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
@@ -47,8 +47,8 @@
         <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
         <?php endif?>
         <?php echo $this->getChildHtml('topSearch') ?>
-        <div id="top-menu-custom">
-            <?php echo $this->getChildHtml('topMenuCustom') ?>
+        <div id="top-menu">
+            <?php echo $this->getChildHtml('topMenu') ?>
         </div>
         <?php echo $this->getChildHtml('topContainer'); ?>
     </div>
