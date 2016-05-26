@@ -555,9 +555,8 @@ tr.summary-details-excluded { font-style:italic; }
 #upper-menu { height: 38px; margin-top: 26px; }
 #links-wrapper { position: relative; float: left; }
 #welcome-wrapper { float: left; padding: 16px 10px 0px 20px; }
-#top-menu { background:#535355; height: 49px; margin-top: 0px; }
-#top-menu-custom  { position:absolute; top:141px; right:0px; width:894px; height:88px; background:#fff; }
-
+#top-menu { position:absolute; top:141px; right:0px; width:894px; height:88px; background:#fff; }
+#top-menu-custom { background:#535355; height: 49px; margin-top: 0px; }
 
 /********** < Navigation */
 .nav-container { }
@@ -569,12 +568,13 @@ tr.summary-details-excluded { font-style:italic; }
 #nav a,
 #nav a:hover { display:block; line-height:1.3em; text-decoration:none; }
 #nav span { display:block; cursor:pointer; white-space:nowrap; }
-#nav li ul span {white-space:normal; }
-#nav ul li.parent /* a */ { background:url(../images/dropdown-arrow.png) 100% 100% no-repeat; }
+#nav li li ul span {white-space:normal; }
+#nav ul li.parent /* a */ { background:url(../images/dropdown-arrow.png) 90% 58% no-repeat; }
 #nav ul li.parent li /* a */  { background-image:none; }
 
 /* 0 Level */
-#nav li { float:left; background:url(../images/dropdown-arrow.png) 85% 58% no-repeat; }
+#nav li { float:left; }
+#nav li.parent { background:url(../images/dropdown-arrow.png) 90% 58% no-repeat; }
 #nav li.active a { }
 #nav a { float:left; padding:5px 30px 5px 3px; color:#2F2F2F; font-weight:bold; font-size:20px; }
 #nav li.over a,
@@ -582,7 +582,7 @@ tr.summary-details-excluded { font-style:italic; }
 
 /* 1st Level */
 #nav ul li,
-#nav ul li.active { float:none; margin:0; padding-bottom:1px; background:#F3F3F3 url(../images/bkg_nav1.gif) 0 100% repeat-x; border-top:1px solid #CBCBCB; padding-bottom:0px; }
+#nav ul li.active { float:none; margin:0; padding-bottom:1px; background:#F3F3F3; border-top:1px solid #CBCBCB; padding-bottom:0px; }
 #nav ul li.first { background:#F3F3F3; border-top:none; padding-bottom:0; }
 #nav ul li.last { background:#F3F3F3; padding-bottom:0; }
 
@@ -592,7 +592,7 @@ tr.summary-details-excluded { font-style:italic; }
 
 /* 2nd Level */
 #nav ul,
-#nav div { position:absolute; width:145px; top:33px; left:-10000px; border:1px solid #CBCBCB; }
+#nav div { position:absolute; width:160px; top:33px; left:-10000px; border:1px solid #CBCBCB; }
 #nav div ul { position:static; width:auto; /* border:none; */ }
 
 #nav ul li ul li a { background:#DCDCDC; } 
